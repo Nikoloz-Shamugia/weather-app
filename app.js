@@ -52,10 +52,7 @@ async function checkWeather(city) {
 const input = document.getElementById('input')
 const btn = document.getElementById('loop')
 btn.addEventListener('click' , () =>{
+    const miniWrapper = document.querySelector('.mini-wrapper')
+    miniWrapper.style.display = 'block'
     checkWeather(input.value)
 })
-
-
-
-
-
